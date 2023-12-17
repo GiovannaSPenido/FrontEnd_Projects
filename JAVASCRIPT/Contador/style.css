@@ -1,0 +1,95 @@
+/*reset*/
+html {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*container-contador*/
+
+body{
+    background-color: #fff;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+    box-shadow: 1px 1px 20px 1px #353433;
+    background-color: black;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 10px;
+}
+
+#contador{
+    color: yellow;
+    font-size: 9rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#incrementar, #decrementar, #resetar{
+    color: #fff;
+    padding: 20px;
+    width:75px;
+    height:75px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6.5rem;
+    font-size: 20px;
+    align-items: center;
+}
+
+#incrementar{
+    background-color: #48da0e;
+}
+
+#decrementar{
+    background-color: #da0e0e;
+}
+
+#resetar{
+    background-color: #ff8800;
+}

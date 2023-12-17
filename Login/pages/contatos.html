@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Contatos</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/contatos.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span id="usuario-logado"></span>
+            <span id="header-titulo">Cadastro de Contatos</span>
+            <div>
+                <button id="btnNew">Contato +</button>
+                <button id="btnLogout">Logout</button>
+            </div>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal-container">
+        <form class="modal">
+
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" class="input required">
+            <span class="span-required"></span>
+
+            <label for="idade">Idade</label>
+            <input id="idade" type="number" min="1" max="150" class="input required">
+            <span class="span-required"></span>
+
+            <button id="btnSalvar" type="submit">Salvar</button>
+
+        </form>
+    </div>
+
+    <script src="../js/contatos.js"></script>
+    <script src="../js/formValidations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+:root {
+  --largura-: 400px;
+  --altura-: 550px;
+  --active-card: 1;
+  --chat-display: none;
+}
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.aside_menu {
+  width: 10%;
+  height: 100vh;
+  background: #21052d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  z-index: 5;
+  justify-content: space-between;
+}
+
+.application {
+  width: 90%;
+  height: 100vh;
+  background: #e0dffd;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  background-image: url(./app-img/app-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-aside-menu-->*/
+
+.icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10rem;
+  background-color: #e0dffd;
+  margin: 1rem;
+}
+
+.name {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.menu {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+
+.menu-icons i {
+  margin: 1rem;
+  width: 18%;
+}
+
+.menu-icons {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  text-align: start;
+  align-items: center;
+}
+
+.home,
+.chat-,
+.notes,
+.profile {
+  margin-top: 3px;
+  cursor: pointer;
+  color: #ffb600;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.home:hover,
+.chat-:hover,
+.notes:hover,
+.profile:hover {
+  opacity: 0.5;
+}
+
+.menu-settings {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-settings i {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-settings i:hover {
+  opacity: 0.5;
+}
+
+/*-application-->*/
+
+.card{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between ;
+  align-items: center;
+  width: var(--largura-);
+  height: var(--altura-);
+  border-radius: 30px;
+  background: #21052d;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px 2px #21052d;
+}
+
+.card.active {
+  display: flex;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 55%;
+}
+
+.card-photo-1 {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 10rem;
+  margin: 1rem;
+  border: 3px solid #e0dffd;
+  position: relative;
+  background-image: url(./app-img/card-photo-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-photo-2 {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 10rem;
+  margin: 1rem;
+  border: 3px solid #e0dffd;
+  position: relative;
+  background-image: url(./app-img/card-photo-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-photo-3 {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 10rem;
+  margin: 1rem;
+  border: 3px solid #e0dffd;
+  position: relative;
+  background-image: url(./app-img/card-photo-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-user {
+  color: #fff;
+  text-align: right;
+  font-family: Azeret Mono;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: -1rem;
+}
+
+.card-df {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-df-1,
+.card-df-2,
+.card-df-3,
+.card-df-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  color: #21052d;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-df-1 {
+  background: #52ff00;
+}
+
+.card-df-2 {
+  background: #c6ff24;
+}
+
+.card-df-3 {
+  background: #ffb600;
+}
+
+.card-df-4 {
+  background: #f00;
+}
+
+.card-dc-title {
+  margin-top: 3rem;
+  color: #ffb600;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 5px;
+}
+
+.description{
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  height: 8rem;
+  margin: 1rem;
+  background-color: #e0dffd;
+}
+
+.description p{
+  font-family: Inter;
+  text-align: center;
+  margin: 2rem;
+  font-size: 14px;
+}
+
+.start-chat,
+.next-user {
+  width: 100px;
+  height: 100px;
+  border-radius: 15rem;
+  border: 2px solid #21052d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  background: #e0dffd;
+}
+
+.next-user:hover,
+.start-chat:hover {
+  box-shadow: 0px 0px 10px 5px rgb(60, 25, 86);
+  border: none;
+  transition: 0.5s;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  color: #35014c;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  gap: 0.7rem;
+}
+
+.chat {
+  display: var(--chat-display);
+  width: var(--largura-);
+  height: var(--altura-);
+  border-radius: 30px;
+  background: #21052d;
+  position: relative;
+  background-image: url(./app-img/chat-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+

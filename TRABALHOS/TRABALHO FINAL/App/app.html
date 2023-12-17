@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share.Byte</title>
+    <link rel="stylesheet" href="app_style.css" />
+    <link rel="stylesheet" href="app_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Link google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../LandingPage/img/share.png">
+  </head>
+  <body>
+    <div class="app-container">
+      <section class="aside_menu">
+        <div class="am-container">
+          <div class="icon">
+            <img src="/img/share.png" alt="">
+          </div>
+          <div class="name">@user</div>
+          <div class="menu">
+            <div class="menu-icons">
+              <i class="fa-solid fa-house fa-lg" style="color: #ffb600"></i>
+              <div class="home" href="#">Home</div>
+            </div>
+            <div class="menu-icons">
+              <i class="fa-solid fa-comments fa-lg" style="color: #ffb600"></i>
+              <div class="chat-" href="#">Chat</div>
+            </div>
+            <div class="menu-icons">
+              <i
+                class="fa-solid fa-note-sticky fa-lg"
+                style="color: #ffb600"
+              ></i>
+              <div class="notes">Notes</div>
+            </div>
+            <div class="menu-icons">
+              <i
+                class="fa-solid fa-circle-user fa-lg"
+                style="color: #ffb600"
+              ></i>
+              <div class="profile">Profile</div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-settings">
+            <i class="fa-solid fa-gear fa-lg" style="color: #ffae00;"></i>
+      </section>
+      <div class="application">
+        <div class="options">
+          <p>CHAT</p>
+          <button class="start-chat" onclick="toggleChat()">
+            <i class="fa-solid fa-comment-dots fa-2xl" style="color: #21052d;"></i>
+          </button>
+        </div>
+        <div class="card active" id="card1">
+          <div class="card-info">
+            <div class="card-photo-1">
+            </div>
+            <div class="card-user">@Amy</div>
+            <div class="card-df">
+              <div class="card-df-1"><p>JAVA</p></div>
+              <div class="card-df-2"><p>JAVASCRIPT</p></div>
+              <div class="card-df-3"><p>HTML</p></div>
+              <div class="card-df-4"><p>CSS</p></div>
+            </div>
+          </div>
+            <div class="card-desc">
+              <div class="card-dc-title">DESCRIPTION</div>
+              <div class="description"><p>I'm Amy. Java? No problem. But when it comes to CSS, it's a bit of a struggle. Java is my comfort zone, but I'm working on mastering the art of CSS styling. Determined to make it seamless, though!</p></div>
+            </div>
+        </div>
+        <div class="card" id="card2">
+          <div class="card-info">
+            <div class="card-photo-2">
+            </div>
+            <div class="card-user">@Jeon</div>
+            <div class="card-df">
+              <div class="card-df-1"><p>CSS</p></div>
+              <div class="card-df-2"><p>HTML</p></div>
+              <div class="card-df-3"><p>JAVA</p></div>
+              <div class="card-df-4"><p>JAVASCRIPT</p></div>
+            </div>
+          </div>
+            <div class="card-desc">
+              <div class="card-dc-title">DESCRIPTION</div>
+              <div class="description"><p>
+                I'm Jeon. JavaScript can be challenging for me, but CSS is my forte. I effortlessly create visually appealing layouts and styles. Despite JavaScript hurdles, I'm committed to learning and making web experiences captivating through CSS.</p></div>
+            </div>
+        </div>
+        <div class="card" id="card3">
+          <div class="card-info">
+            <div class="card-photo-3">
+            </div>
+            <div class="card-user">@Robert</div>
+            <div class="card-df">
+              <div class="card-df-1"><p>HTML</p></div>
+              <div class="card-df-2"><p>CSS</p></div>
+              <div class="card-df-3"><p>JAVASCRIPT</p></div>
+              <div class="card-df-4"><p>JAVA</p></div>
+            </div>
+          </div>
+            <div class="card-desc">
+              <div class="card-dc-title">DESCRIPTION</div>
+              <div class="description"><p>Hi there! I'm Robert, a passionate programmer with a special affinity for HTML. While Java may throw me a curveball every now and then, my expertise truly shines when I'm immersed in the world of HTML.</p></div>
+            </div>
+          </div>
+          <div class="chat"></div>
+        <div class="options">
+          <p>NEXT USER</p>
+          <button class="next-user" onclick="mudaCard()">
+            <i class="fa-solid fa-arrow-right fa-2xl" style="color: #21052d;"></i>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

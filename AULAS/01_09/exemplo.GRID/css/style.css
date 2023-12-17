@@ -1,0 +1,77 @@
+/* ========= LAYOUT ========= */
+
+    /* .frame{
+        display: flex;
+    }
+
+    .header{
+        text-align: center;
+        background-color: rgb(77, 185, 63);
+        padding: 10px;
+    }
+
+    .content{
+        margin: 10px;
+        height: 79.5vh;
+        padding: 10px;
+    }
+
+    .footer{
+        background-color:  rgb(77, 185, 63);
+        padding: 10px;
+        color: #000;
+    }
+
+    .navigation,.aside {
+        background-color: rgb(114, 236, 124);
+        width: 250px;
+        padding: 10px;
+    } */
+
+
+     body {
+        font: 400 var(--text-font-size) var(--text-font);
+        color: var(--text-color);
+        background: var(---background-color);
+    }
+    
+    h1,header {
+        font: 700 var(--title-font-size) var(--title-font);
+        color: var(--title-color);
+    }
+
+   .container{
+    height: 100vh;
+   }
+    
+    header {
+        background-color: var(--base-color-one);
+        padding: var(--standart-padding);
+        text-align: center;
+        grid-column: span 3;
+    }
+    
+    main {
+        padding: var(--standart-padding);
+    }
+    
+    nav {
+        background-color: var(--base-color-two);
+        padding: var(--standart-padding);
+    }
+    
+    aside {
+        background-color: var(--base-color-three);
+        padding: var(--standart-padding);
+        color: var(--text-color-light);
+    }
+    
+    footer {
+        background-color: var(--base-color-one);
+        padding: var(--standart-padding);
+        color: var(--text-color-light);
+        text-align: center;
+        grid-column: span 3;
+
+    }
+   

@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(to right bottom, #5D0184 , #21052D 30%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container-fg-page{
+  background-color: #E0DFFD;
+  border-radius: 30px;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  min-height: 770px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-fg-Container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.icon{
+  background-color: #5D0184;
+  box-shadow: 5px 4px 20px #A00CE5;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  top: 0;
+}
+
+.icon i{
+  font-size: 50px;
+  color: #E0DFFD;
+}
+
+.central-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+
+.text{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.text h3{
+  font-family: 'Poppins';
+  font-size: 40px;
+  color: #A00CE5;
+  margin-bottom: 1rem;
+}
+
+.text p{
+  font-family: 'Inter';
+  letter-spacing: 1.2px;
+  color: #5D0184;
+}
+
+.input input{
+  position: relative;
+  background-color: transparent;
+  border-bottom: 1px solid #A00CE5;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0.5rem;
+  padding: 1rem 1.25rem 5px 2rem;
+  font-size: 16px;
+  outline: none;
+}
+
+.input i{
+  color: #A00CE5;
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 3px;
+}
+
+.central-container button{
+  margin-top: 2rem;
+  padding: 10px 80px;
+  font-size: 16px;
+  background-color: #A00CE5;
+  color: #E0DFFD;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  border: 1.5px solid transparent;
+  border-radius: 30px;
+  transition: background .5s ease-in-out;
+}
+
+.central-container button:hover{
+  transition: background .5s ease-in-out;
+  box-shadow: 0 0 20px#A00CE5;
+  background-color: #E0DFFD;
+  color: #A00CE5;
+}
+
+.central-container span a{
+  text-decoration: none;
+  color: #5D0184;
+  transition: all 0.1s ease-in-out;
+}
+
+.central-container span a:hover{
+  transition: all 0.1s ease-in-out;
+  color: #A00CE5;
+}
+
+.central-container span{
+  margin-top: 10px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="convertor">
+      <div class="container">
+        <div class="title">
+            <img src="img/temp.png" alt="">
+          <h1>Conversor de Temperatura</h1>
+        </div>
+        <div class="inserir">
+          <label for="temperatura">Insira a temperatura</label>
+          <input type="text" id="temperatura" />
+        </div>
+        <div class="seletor">
+          <label for="unidade">Escolha a unidade</label>
+          <select id="unidade">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+          </select>
+        </div>
+        <button type="button" onclick="converterTemp()" class="animated-button">
+          <span>Converter</span>
+          <span></span>
+        </button>
+        <p id="resultado">Resultado:</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

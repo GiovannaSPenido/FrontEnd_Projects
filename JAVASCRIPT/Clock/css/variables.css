@@ -1,0 +1,20 @@
+
+/* ======== VARIABLES =========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    font-size: 62.5%;
+    /* fonts type */
+    --gill_sans-font: 'Gill Sans MT', sans-serif;
+    --poppins-font: 'Poppins', sans-serif;
+
+    /* fonts size */
+    --large-font-size: 10.0rem;
+    --small-font-size: 4.0rem;
+
+    /* colors */
+    --bgcolor: #091921;
+    --contrast-color: #FF105E;
+    --ligther-color: #999A9A;
+    --darker-color: #2C2C2C;
+}

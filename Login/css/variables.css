@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+:root{
+
+    --body-bgcolor: #E5E5E5;
+    --form-bgcolor: #FFFFFF;
+    --btn-bgcolor: #3939E2;
+    --btn-textcolor-white: #FFFFFF;
+    --btn-new-bgcolor: #009500;
+    --btn-logout-bgcolor: #BC0202;
+    --modal-bgcolor:  rgba(0, 0, 0, 0.5);
+    --span-textcolor-required: #E63636;
+    --font-family: 'Poppins', sans-serif;
+}

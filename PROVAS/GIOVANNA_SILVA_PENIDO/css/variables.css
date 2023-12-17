@@ -1,0 +1,13 @@
+:root {
+    font-size: 85%;
+    --standart-padding: 2.0rem;
+
+
+    /* fonts type*/
+    --text-font: 'Merriweather', serif;
+
+    /* colors */
+    --color1: #74154f;
+    --color2: #b995bd;
+    --color3: #d7c2da;
+}

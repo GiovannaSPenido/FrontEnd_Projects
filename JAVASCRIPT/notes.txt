@@ -1,0 +1,18 @@
+function calcularFatorialIterativo(numero) {
+  if (numero < 0) {
+    return "Não é possível calcular o fatorial de um número negativo.";
+  } else if (numero === 0) {
+    return 1;
+  } else {
+    let resultado = 1;
+    for (let i = 1; i <= numero; i++) {
+      resultado *= i;
+    }
+    return resultado;
+  }
+}
+
+// Exemplo de uso:
+const numero = 5;
+const fatorial = calcularFatorialIterativo(numero);
+console.log(`O fatorial de ${numero} é ${fatorial}`);

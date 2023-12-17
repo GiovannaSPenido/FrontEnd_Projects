@@ -1,0 +1,66 @@
+* {
+    font-family: Lato, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #2c2c2c;
+    background: #f0f0f0;
+  }
+  
+  #main {
+    margin: 40px auto;
+    display: table;
+  }
+  
+  #contatos {
+    width: 480px;
+    min-height: 480px;
+    padding: 40px;
+    background: #ffff99;
+    box-shadow: 3px 3px 10px #555;
+    float: left;
+  }
+  
+  .comandos {
+    width: 100px;
+    float: right;
+  }
+  
+  .botoes {
+    width: 100px;
+    height: 100px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+  }
+  
+  #listarContatos {
+    background: #3366ff;
+  }
+  
+  #adicionarContato {
+    background: #669900;
+  }
+  
+  #removerContato {
+    background: #cc0000;
+  }
+  
+  #limparLista {
+    background: grey;
+  }
+  
+  .itemLista {
+    margin: 20px 0 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #aaa;
+  }
+  
+  .itemLista:last-child {
+    border: 0;
+  }

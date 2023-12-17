@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastroPage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <title>Registration</title>
+</head>
+<body>
+  <div class="container-register">
+    <div class="title"><h1 class="h1-title">REGISTER</h1></div>
+    <div class="forms">
+      <div class="form-container-1">
+        <form action="" id="fisrt-form">
+          <input type="text" id="firstName_register" placeholder="FIRST NAME">
+          <input type="text" id="lastName_register" placeholder="LAST NAME">
+          <input type="text" id="lastName_register" placeholder="NICKNAME">
+          <input type="tel" id="phone_number" placeholder="PHONE NUMBER" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}">
+          <label class="picture" tabindex="0">
+            <input type="file" accept="image/*" id="picture_input"/>
+            <span class="picture_image"></span>
+          </label>
+        </form>
+      </div>
+      <div class="form-container-2">
+        <form action="" id="second-form">
+          <input type="text" id="languages" placeholder="TELL US THE PROGRAMMING LANGUAGES THAT YOU ARE AN EXPERT">
+          <input type="text" id="tell-about" placeholder="TELL US ABOUT YOU">
+          <button type="submit" id="register"><a href="../App/app.html">Send register</a></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="cadastroPage.js"></script>
+</body>
+</html>
